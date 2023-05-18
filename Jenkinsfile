@@ -34,8 +34,6 @@ pipeline {
             steps {
                 script {
                     buildImage 'nanajanashia/demo-app:jma-3.0'
-                    dockerLogin()
-                    dockerPush 'nanajanashia/demo-app:jma-3.0'
                 }
             }
         }
